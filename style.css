@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.page1{
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+}
+.image{
+    position: relative;
+}
+.image img{
+    height: 45vw;
+    width: 100vw;
+    object-position: center;
+    background-color: black;
+}
+.image h2{
+    position: absolute;
+    top:7vw;
+    margin-left: 4vw;
+    font-size: 1.5vw;
+    color: black;
+    letter-spacing: 0.8vw;
+
+}
+.image h1{
+    position: absolute;
+    top:9vw;
+    font-size: 4vw;
+    margin-left: 4vw;
+    color: black;
+    letter-spacing: 0.8vw;
+    
+
+}
+.image h4{
+    position: absolute;
+    top:15vw;
+    font-size: 1.5vw;
+    margin-left: 4vw;
+  
+    width: 45%;
+    font-weight: 400;
+    
+}
+
+
+.button button1 {
+    padding: 10px 20px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121  ;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 8px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    padding: 1vw 2.5vw;
+    font-size: 1.2vw;
+    font-weight: 800;
+    position: absolute;
+    margin-left: 4vw;
+    top:23vw;
+   }
+   
+   button1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: rgb(202, 10, 10);
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button1:hover {
+    color: #e8e8e8;
+   }
+   
+   button1:hover::before {
+    width: 100%;
+   }
+   button2 {
+    padding: 10px 20px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 8px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    padding: 1vw 2.5vw;
+    font-size: 1.2vw;
+    font-weight: 800;
+    position: absolute;
+    margin-left: 25vw;
+    top:23vw;
+   }
+   
+   button2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: rgb(202, 10, 10);
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button2:hover {
+    color: #e8e8e8;
+   }
+   
+   button2:hover::before {
+    width: 100%;
+   }
+
+   .boxes{
+    display: flex;
+  position: absolute;
+  top:42vw;
+
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+   background-color: rgb(87, 85, 85);
+    color: white;
+    margin-left: 4vw;
+ 
+    
+   }
+   .boxes h4{
+    font-weight: 100;
+    font-size: 0.8vw;
+   }
+   .box1{
+    padding: 2vw 1vw;
+    background-color: #212121;
+    margin-right: 0.1vw; 
+   }
+  
+   .box2{
+    padding: 1.5vw 1vw;
+    background-color: #212121;
+     margin-right: 0.1vw;
+   }
+   
+   #hoverbutton1:hover{
+    border-bottom: 4px solid  rgb(202, 10, 10);
+    transition: all ease 0.2s;
+
+   }
+   .box3{
+    padding: 1.5vw 1vw;
+    background-color: #212121;
+    margin-right: 0.1vw;
+   }
+   #hoverbutton2:hover{
+    border-bottom: 4px solid  rgb(202, 10, 10);
+    transition: all ease 0.2s;
+   }
+   .box4{
+    padding: 1.5vw 1vw;
+    background-color: #212121;
+    margin-right: 0.1vw;
+   }
+   #hoverbutton3:hover{
+    border-bottom: 4px solid  rgb(202, 10, 10);
+    transition: all ease 0.2s;
+   }
+   
+   .box5{
+    padding: 1vw 1vw;
+    background-color: #212121;
+    margin-right: 0.1vw;
+   }
+
+
+   #hoverbutton4:hover{
+    border-bottom: 4px solid  rgb(202, 10, 10);
+    transition: all ease 0.2s;
+   }
