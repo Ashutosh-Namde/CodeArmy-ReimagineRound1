@@ -9,11 +9,74 @@ html,body{
     width: 100%;
 }
 
-.page1{
+a{
+   display: inline-block;
+}
+    
+#text-contan:hover #tex{
+    transform: translate(0,0);
+}
+
+.swiper-slide img{
+    object-fit: cover;
+    object-position: center;
+  
+}
+
+.page-1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.page-1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page-1 .overlay{
+    width: 100%;
+    height: 100%;
+    background: #0000001b;
+    position: absolute;
+    top: 0%;
+}
+
+
+.nav-links{
+ 
+    background: #cfc3ec;
+    width: 100%;
+    
+   color: black;
+    
+}
+
+.nav-a{
+    font-size: 4vw;
+    line-height: 1;
+}
+
+.heading h1{
+    word-spacing: 3vw;
+    font-size: 15vw;
+    line-height: 1;
+}
+
+.heading h1 span{
+      display: inline-block;
+}
+
+.vidio{
+    width: 30%;
+    height: 50%;
+}
+
+/* .page1{
     height: 100%;
     width: 100%;
     background-color: #212121;
-}
+} */
 .image{
     position: relative;
 }
@@ -145,32 +208,31 @@ html,body{
 
    .boxes{
     display: flex;
-  position: absolute;
-  top:42vw;
-
-    width: 40vw;
+  
+    width: 100%;
     align-items: center;
     justify-content: center;
-   background-color: rgb(87, 85, 85);
+    gap: 9px;
+    background-color: rgb(87, 85, 85);
     color: white;
-    margin-left: 4vw;
+    font-size: x-large;
  
     
    }
    .boxes h4{
     font-weight: 100;
-    font-size: 0.8vw;
+ 
    }
    .box1{
-    padding: 2vw 1vw;
+
     background-color: #212121;
-    margin-right: 0.1vw; 
+    padding: 1.5vw 1vw;
    }
   
    .box2{
     padding: 1.5vw 1vw;
     background-color: #212121;
-     margin-right: 0.1vw;
+    
    }
    
    #hoverbutton1:hover{
@@ -198,7 +260,7 @@ html,body{
    }
    
    .box5{
-    padding: 1vw 1vw;
+    padding: 1.5vw 1vw;
     background-color: #212121;
     margin-right: 0.1vw;
    }
@@ -208,3 +270,35 @@ html,body{
     border-bottom: 4px solid  rgb(202, 10, 10);
     transition: all ease 0.2s;
    }
+
+#spid{
+    box-shadow: 4px 4px 4px red;
+}
+
+   .swiper {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    box-shadow: 7px 7px 60px rgb(174, 64, 64);
+    object-position: center;
+    transition: all ease-in-out 1s;
+ 
+  }
+  

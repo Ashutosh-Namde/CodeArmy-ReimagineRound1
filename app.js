@@ -7,7 +7,7 @@ gsap.from(".image h1",{
         scroller:"body",
         start:"top 80%",
         end:"top 20%",
-        markers:true,
+        markers:false,
         
     }
 })
@@ -81,3 +81,99 @@ button2.addEventListener('mousemove', function() {
     duration: 1,
     scale:4
  })
+
+
+
+ 
+let main = document.querySelector(".main")
+let navitem = document.querySelector(".nav-links")
+let cusor = document.querySelector(".cursor")
+let menu = document.querySelector("#menu")
+let cross = document.querySelector("#cross")
+let tex = document.querySelector("#tex")
+
+main.addEventListener("mousemove",(dets)=>{
+   gsap.to(cusor,{
+    x:dets.x,
+    y:dets.y,
+    ease:"power1",
+    duration:1,
+    
+   })
+})
+
+let count = 0
+
+
+menu.addEventListener("click", () => {
+   if (count === 0) {
+       gsap.fromTo(navitem, {
+           y: "-100%",
+           display: "flex"
+       }, {
+           y: "0%",
+           duration: 1.5,
+           ease: "power1.inOut"
+       });
+       count = 1;
+   }
+});
+
+cross.addEventListener("click", () => {
+   if (count === 1) {
+       gsap.to(navitem, {
+           y: "-100%",
+           duration: 1.5,
+           ease: "power1.inOut",
+           onComplete: () => {
+               navitem.style.display = "none";
+           }
+       });
+       count = 0;
+   }
+});
+
+
+
+
+let tl = gsap.timeline();
+
+tl.from(".loader h1",{
+    x:200,
+    duration:0.5,
+    stagger:0.5,
+    opacity:0
+})
+
+tl.to(".loader h1",{
+    opacity:0,
+    x:-200,
+    stagger:0.5,
+    duration:0.5,
+})
+
+tl.to(".loader",{
+    opacity:0
+})
+tl.to(".loader",{
+    display:"none"
+})
+
+
+tl.from(".heading h1 span",{
+    y:100,
+    duration:0.5,
+    stagger:0.5,
+    opacity:0,
+})
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4.5 ,
+      loop:true,
+      autoplay: {
+        delay: 3,
+        disableOnInteraction: false,
+      },
+      speed:3000,
+  });
+ 

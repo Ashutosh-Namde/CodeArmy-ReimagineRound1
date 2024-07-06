@@ -5,9 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-   
+  
+   <div class="loader w-full h-screen fixed top-0 bg-black z-50 text-white flex justify-center items-center gap-8 text-4xl">
+    <h1>With</h1>
+    <h1>great</h1>   
+    <h1>power</h1>
+    <h1>comes</h1>
+    <h1>great</h1>  
+    <h1>responsibility</h1>
+    <h1>.</h1>
+</div>  
+<div class="cursor w-44 z-40 h-44 rounded-full flex justify-center   fixed">
+  
+  <img src="./img/reeredws-removebg-preview.png" alt="" class="object-cover">
+</div>
+
+
+<div class="main">
+      <div class="page-1 relative">
+          <video loop autoplay muted src="./vidio/mainbg.mp4"></video> 
+        <div class="overlay ">
+           <div class="flex justify-between ">
+               <div class="right-nav">
+                    <img src="./img/spider-removebg-preview.png" alt="" class="w-56 h-56 object-cover"> 
+               </div>
+               <nav class="navbar text-white flex flex-row-reverse w-full">
+                   <a  class="text-6xl font-bold uppercase p-16 cursor-pointer" id="menu">menu</a>               
+               </ul>
+               
+               <div class="nav-links hidden justify-around px-10 h-1/2  items-center fixed top-0">
+                   <div class="vidio">
+                       <h1 class="uppercase font-semibold">spider</h1>
+                       <video  loop autoplay muted src="./vidio/navspider.mp4"></video>
+                   </div>
+                   <i class="ri-twitter-x-fill right-10 absolute top-10 text-8xl cursor-pointer" id="cross"></i>
+                   <ul class="nav-a pr-16">    
+                       <li><a href="" >About</a></li>
+                       <li><a href="">Services</a></li>
+                       <li><a href="">Contact</a></li>
+                       <button>take a seat</button>
+                   </ul>
+                </div>
+             </div>
+           <div class="heading w-full h-80 flex flex-col items-center justify-center" >
+               <h1 class=" text-white  font-bold uppercase absolute bottom-6">
+
+                   <span>s</span><span>p</span><span>i</span><span>d</span><span>e</span><span>r</span><span>-</span><span>m</span><span>a</span><span>n</span>
+        </h1>
+              
+
+           </div>
+       </div>
+  </div>
 
  
    
@@ -26,7 +86,7 @@
                 </button2>
             </div>
 
-            <div class="boxes">
+            <div class="boxes cursor-pointer">
                 <div class="box1">
                   <h5 id="hoverbutton">OVERVIEW</h5>
                 </div>
@@ -43,30 +103,71 @@
                   <h5 id="hoverbutton4">IN COMICS FULL</h5>
                 </div>
               </div>
-        </div>
+        </div> 
 
-        <!-- <div class="change">
-            <div class="boxes">
-              <div class="box1">
-                <h4 id="hoverbutton">OVERVIEW</h4>
-              </div>
-              <div class="box2">
-                <h4 id="hoverbutton1">ON SCREEN PROFILE</h4>
-              </div>
-              <div class="box3">
-                <h4 id="hoverbutton2">ON SCREEN FULL REPORT</h4>
-              </div>
-              <div class="box4">
-                <h4 id="hoverbutton3">IN COMICS PROFILE</h4>
-              </div>
-              <div class="box5">
-                <h4 id="hoverbutton4">IN COMICS FULL</h4>
-              </div>
+</div> 
+
+<div class="swiper mySwiper mt-36">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+             
+              <img src="https://i.pinimg.com/236x/82/17/98/821798fa9602f251b3f8f366896f1f28.jpg" alt="" class="object-cover" >
+              <h1 class="text-5xl text-start text-black font-bold mt-12 cursor-pointer" id="t"> Blank penthor:Blood hunt(2024)#1</h1>
+              <h1 class="text-start text-3xl text-gray-800 mt-5">2024</h1>
+            
             </div>
-        </div> -->
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="app.js"></script>
+            <div class="swiper-slide">
+              <img src="https://i.pinimg.com/236x/52/c8/e9/52c8e9904e2e0860fc66d051880f89b3.jpg" alt="" >
+              <h1 class="text-5xl text-start text-black font-bold mt-12  cursor-pointer" > X-MEN: BLOOD HUNT - PSYLOCKE (2024) #2</h1>
+              <h1 class="text-start text-3xl text-gray-800 mt-5">2024</h1>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.pinimg.com/236x/98/32/e5/9832e5057efc8b52fc11822c8f64337c.jpg" alt="">
+              <h1 class="text-5xl text-start text-black font-bold mt-12  cursor-pointer"> WEREWOLF BY NIGHT: BLOOD HUNT (2024) #3</h1>
+              <h1 class="text-start text-3xl text-gray-800 mt-5">2024</h1>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.pinimg.com/236x/44/51/46/445146c0a59aa77280e3702e7da1b368.jpg" alt="">
+              <h1 class="text-5xl text-start text-black font-bold mt-12  cursor-pointer">Blood hunter(2024) #4</h1>
+              <h1 class="text-start text-3xl text-gray-800 mt-5">2024</h1>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.pinimg.com/236x/3f/60/4c/3f604c0da13efeb93b6412db2ce47b6d.jpg" alt="">
+              <h1 class="text-5xl text-start text-black font-bold mt-12 cursor-pointer" > Doctor stanger #5</h1>
+              <h1 class="text-start text-3xl text-gray-800 mt-5">2024</h1>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.pinimg.com/236x/c4/9a/77/c49a77705c6aa79ccaaca648ef46d402.jpg" alt="">
+              <h1 class="text-5xl text-start text-black font-bold mt-12  cursor-pointer" id="spider-h6">MILES MORALES: SPIDER-MAN (2022) #6</h1>
+              <h1 class="text-start text-3xl text-gray-800 mt-5">2024</h1>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.pinimg.com/236x/90/da/33/90da337ec51153bfecb28b94a588c7bc.jpg" alt="">
+              <h1 class="text-5xl text-start text-black font-bold mt-12  cursor-pointer"> AMAZING SPIDER-MAN ANNUAL (2024) #7</h1>
+              <h1 class="text-start text-3xl text-gray-800 mt-5">2024</h1>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.pinimg.com/236x/7a/8f/8e/7a8f8edc856fb9974826dea910cf96cd.jpg" alt="">
+              <h1 class="text-5xl text-start text-black font-bold mt-12  cursor-pointer" >ANNIHILATION 2099 (2024) #8</h1>
+              <h1 class="text-start text-3xl text-gray-800 mt-5">2024</h1>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.pinimg.com/236x/e8/ad/14/e8ad1403e0ad194f4d6773b7d409bae5.jpg" alt="">
+              <h1 class="text-5xl text-start text-black font-bold mt-12  cursor-pointer">THE LIFE OF WOLVERINE (2024) #9</h1>
+              <h1 class="text-start text-3xl text-gray-800 mt-5">2024</h1>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://i.pinimg.com/236x/da/2f/48/da2f48925fca7df56dec879248cba07c.jpg" alt="">
+              <h1 class="text-5xl text-start text-black font-bold mt-12  cursor-pointer">Dead pool(2024) #10</h1>
+              <h1 class="text-start text-3xl text-gray-800 mt-5">2024</h1>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+</div>
+         
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="app.js"></script>
 </body>
 </html>
