@@ -50,7 +50,7 @@ button2.addEventListener('mousemove', function() {
          heading3.style.color = "black"
   });
   button3.addEventListener('mousemove', function() {
-    image.src = "https://assetsio.gnwcdn.com/Marvel's-Spider-Man-2-(1).jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"; // Replace 'new-image.jpg' with your hover image URL
+    image.src = "https://gameranx.com/wp-content/uploads/2018/09/Spider-Man-4K-Wallpaper-2.jpg"; // Replace 'new-image.jpg' with your hover image URL
     heading.style.color = "white"
         heading2.style.color = "white"
          heading3.style.color = "white"
@@ -63,7 +63,7 @@ button2.addEventListener('mousemove', function() {
          heading3.style.color = "black"
   });
   button4.addEventListener('mousemove', function() {
-    image.src = "https://i.pinimg.com/564x/bb/1c/59/bb1c59d84f4ea0c123e30019b3e4bc07.jpg"; // Replace 'new-image.jpg' with your hover image URL
+    image.src = "https://wallpapers.com/images/hd/spider-man-vector-art-4k-7gw8j1lhg6kng2n3.jpg"; // Replace 'new-image.jpg' with your hover image URL
     heading.style.color = "white"
         heading2.style.color = "white"
          heading3.style.color = "white"
@@ -177,3 +177,42 @@ var swiper = new Swiper(".mySwiper", {
       speed:3000,
   });
  
+// ------------------------------------
+
+var tl2 = gsap.timeline({
+    repeat:-1
+  });
+  
+  tl2.to(".imagecontainer",{
+    ease: Expo.easeInOut,
+    duration:2,
+    width:"100%",
+    stagger:2
+  },'a')
+  .to(".text h1",{
+  
+    ease: Expo.easeInOut,
+    stagger:2,
+    top:0
+  },'a')
+  .to(".text h1",{
+    delay:2,
+    ease: Expo.easeInOut,
+    stagger:2,
+    top:0,
+    top:"-100%"
+  },'a')
+  
+  .to(".text2 h4",{
+  
+    ease: Expo.easeInOut,
+    stagger:2,
+    top:0
+  },'a')
+  .to(".text2 h4",{
+    delay:2,
+    ease: Expo.easeInOut,
+    stagger:2,
+    top:0,
+    top:"-100%"
+  },'a')

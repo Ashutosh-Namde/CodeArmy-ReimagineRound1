@@ -45,9 +45,10 @@ a{
 
 .nav-links{
  
-    background: #cfc3ec;
+ background-image: url("https://wallpapers.com/images/hd/spider-man-vector-art-4k-7gw8j1lhg6kng2n3.jpg");
     width: 100%;
-    
+    background-position: center;
+    background-size: cover;
    color: black;
     
 }
@@ -58,9 +59,12 @@ a{
 }
 
 .heading h1{
-    word-spacing: 3vw;
-    font-size: 15vw;
+    letter-spacing: 40px;
+    text-align: center;
+  
+    font-size: 6vw;
     line-height: 1;
+    width: 100%;
 }
 
 .heading h1 span{
@@ -207,15 +211,17 @@ a{
    }
 
    .boxes{
+    position: absolute;
+    top: 43vw;
     display: flex;
-  
-    width: 100%;
+   margin-top: 0;
+  left: 20vw;
     align-items: center;
     justify-content: center;
-    gap: 9px;
+    gap: 0.1vw;
     background-color: rgb(87, 85, 85);
     color: white;
-    font-size: x-large;
+    font-size: 1vw;
  
     
    }
@@ -237,26 +243,26 @@ a{
    
    #hoverbutton1:hover{
     border-bottom: 4px solid  rgb(202, 10, 10);
-    transition: all ease 0.2s;
+    /* transition: all ease 0.2s; */
 
    }
    .box3{
     padding: 1.5vw 1vw;
     background-color: #212121;
-    margin-right: 0.1vw;
+  
    }
    #hoverbutton2:hover{
     border-bottom: 4px solid  rgb(202, 10, 10);
-    transition: all ease 0.2s;
+    /* transition: all ease 0s; */
    }
    .box4{
     padding: 1.5vw 1vw;
     background-color: #212121;
-    margin-right: 0.1vw;
+
    }
    #hoverbutton3:hover{
     border-bottom: 4px solid  rgb(202, 10, 10);
-    transition: all ease 0.2s;
+    /* transition: all ease 0s; */
    }
    
    .box5{
@@ -265,10 +271,12 @@ a{
     margin-right: 0.1vw;
    }
 
-
    #hoverbutton4:hover{
     border-bottom: 4px solid  rgb(202, 10, 10);
-    transition: all ease 0.2s;
+    /* transition: all ease 0s; */
+   }
+   .boxes:hover{
+    transition: all ease s;
    }
 
 #spid{
@@ -278,17 +286,21 @@ a{
    .swiper {
     width: 100%;
     height: 100%;
+    
 
   }
 
   .swiper-slide {
+    
     text-align: center;
     font-size: 18px;
-    background:#fff;
+    background-color: #212121;
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    gap: -1;
+    overflow: hidden;
+
   }
 
   .swiper-slide img {
@@ -296,9 +308,109 @@ a{
     width: 80%;
     height: 60%;
     object-fit: cover;
-    box-shadow: 7px 7px 60px rgb(174, 64, 64);
+    box-shadow: 7px 7px 50px rgb(174, 64, 64);
     object-position: center;
     transition: all ease-in-out 1s;
+    margin-top: 5vw;
+   
  
   }
+
+
+  .swiper-slide h1{
+    color: aliceblue;
+  }
+  .swiper-slide:hover{
+    height: 110%;
+    scale: 1.1;
   
+  }
+ .head {
+   background-color: #212121;
+   height: 15vw;
+
+ }
+ .head h1{
+    font-size: 10vw;
+    text-align: center;
+   color: white;
+padding-top: 2vw;
+font-weight: 600;
+text-shadow: 4px 4px 30px  red;
+ }
+
+ /* --------------------------- */
+ 
+ 
+ #main{
+    height: 100%;
+    width: 100%;
+  
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+}
+#center{
+position: relative;
+box-shadow: 4px 4px 40px 30px red;
+height: 90%;
+width: 70%;
+
+}
+
+.imagecontainer{
+position: absolute;
+overflow: hidden;
+height: 100%;
+width: 0%;
+
+
+
+
+}
+img{
+height: 45vw;
+object-fit: cover;
+object-position: center;
+}
+#one{
+width: 0%;
+}
+
+.text{    
+position: absolute;
+
+overflow: hidden;
+height: 100px;
+z-index: 999;
+width: 800px;
+bottom: 8vw;
+left: -10%;
+color: aliceblue;
+
+}
+
+.text h1{
+position: absolute;
+font-size: 6vw;
+top: 100px;
+}
+
+.text2{
+position: absolute;
+
+overflow: hidden;
+height: 100px;
+z-index: 999;
+width: 600px;
+bottom: 0vw;
+left: -10%;
+color: aliceblue;
+
+}
+.text2 h4{
+position: absolute;
+font-size: 1vw;
+top: 100px;
+} 
