@@ -499,8 +499,12 @@
       color: black;
     }
     .loader {
-      display: none;
-      visibility: hidden;
+    width: 100vw;
+   
+    }
+    .loader h1{
+        width: 5vw;
+      
     }
     .footer-nav {
       width: 100%;
@@ -562,4 +566,10 @@
       text-align: center;
       margin-top: 10px;
     }
+   
+    .end-1 img{
+        display: none;
+    }
+ 
+
   }
